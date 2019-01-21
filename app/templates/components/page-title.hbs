@@ -1,0 +1,13 @@
+{{#paper-toolbar as |toolbar|}}
+  {{#toolbar.tools}}
+    {{#link-to "index"}}
+      {{#paper-button iconButton=true}}
+        {{paper-icon "home"}}
+      {{/paper-button}}
+    {{/link-to}}
+    <h2>
+      {{yield}}
+    </h2>
+    <span class="flex"></span>
+  {{/toolbar.tools}}
+{{/paper-toolbar}}

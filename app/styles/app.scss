@@ -1,0 +1,49 @@
+@import 'ember-paper';
+
+.img-responsive {
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.word-break {
+  word-break: break-all;
+}
+
+.text-align-center {
+  text-align: center;
+}
+
+.video-container {
+  height: 500px;
+}
+
+.fullscreen-video > div {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 64px;
+  bottom: 0;
+}
+
+.twitch-video {
+  height: 100%;
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:link {
+  /* Essentially means a[href], or that the link actually goes somewhere */
+  color: inherit;
+}
+a:visited {
+  color: inherit;
+}
+a:hover {
+  color: inherit;
+}
+a:active {
+  color: inherit;
+}

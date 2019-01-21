@@ -1,0 +1,23 @@
+<PageTitle>
+    {{this.model.game.name}}
+</PageTitle>
+
+<div class="layout layout-wrap flex">
+  {{#each this.model.streams as |stream|}}
+    <div class="flex-100 flex-gt-xs-50 flex-gt-sm-25 layout">
+      {{#paper-card as |card|}}
+        {{#link-to "users" stream.user.id}}
+          {{card.image class="img-responsive" src=stream.thumbnail alt=stream.name}}
+          {{#card.title as |title|}}
+            {{#title.text as |text|}}
+              {{#text.headline class="word-break text-align-center"}}{{stream.title}}{{/text.headline}}
+              {{#text.subhead}}{{stream.language}} | {{stream.user.display_name}} {{/text.subhead}}
+            {{/title.text}}
+          {{/card.title}}
+        {{/link-to}}
+      {{/paper-card}}
+    </div>
+  {{/each}}
+</div>
+
+{{outlet}}
